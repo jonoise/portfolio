@@ -2,6 +2,7 @@ import { Stack } from '@chakra-ui/react'
 import Head from 'next/head'
 import Navbar from '../components/nav/index'
 import Header from '../components/header/index'
+import Portfolio from '../components/portfolio'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Stack w="full" bg="#1a1a1a" minH="100vh">
         <Navbar />
         <Header />
+        <Portfolio />
       </Stack>
     </>
   )
