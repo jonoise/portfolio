@@ -1,4 +1,5 @@
 import { Text } from '@chakra-ui/react'
+import { colors } from '../../constants'
 import { MotionFlex, MotionDivider } from '../motion/components'
 
 const Amilkar = () => {
@@ -11,11 +12,12 @@ const Amilkar = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 0.5 } }}
         fontFamily="Montserrat"
+        color={colors.hoverWhite}
       >
-        <Text color="white" fontSize="40px" fontWeight="900">
+        <Text fontSize="40px" fontWeight="900">
           Amilkar Munoz
         </Text>
-        <Text color="white" fontSize="14px" fontWeight="700">
+        <Text fontSize="14px" fontWeight="700">
           Developer
         </Text>
       </MotionFlex>

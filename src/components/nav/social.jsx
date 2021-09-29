@@ -43,11 +43,10 @@ const SocialLinks = () => {
               href={link.url}
               target={'_blank'}
               size="sm"
-              color="white"
               rounded="full"
               cursor="pointer"
               transition=".3s"
-              _hover={{ bg: 'none', color: colors.hoverWhite }}
+              _hover={{ bg: 'none', color: 'white' }}
             >
               {link.icon}
             </Box>
