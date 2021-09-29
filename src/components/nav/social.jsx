@@ -1,5 +1,5 @@
 import { Tooltip, HStack, Box } from '@chakra-ui/react'
-import { socialLinks } from '../../constants'
+import { colors, socialLinks } from '../../constants'
 import { motion } from 'framer-motion'
 
 const MotionHStack = motion(HStack)
@@ -39,10 +39,15 @@ const SocialLinks = () => {
             fontSize="10px"
           >
             <Box
+              as="a"
+              href={link.url}
+              target={'_blank'}
               size="sm"
+              color="white"
               rounded="full"
               cursor="pointer"
-              _hover={{ bg: 'none' }}
+              transition=".3s"
+              _hover={{ bg: 'none', color: colors.hoverWhite }}
             >
               {link.icon}
             </Box>

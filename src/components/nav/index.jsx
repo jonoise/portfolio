@@ -6,12 +6,11 @@ const Navbar = () => {
     <Container
       minH="60px"
       borderBottom="1px solid #3838386B"
-      color="white"
       align="center"
       justify="center"
     >
       <Flex w="full" h="100%" justify="space-between" align="center">
-        <Text>amilkar.dev</Text>
+        <Text color="white">amilkar.dev</Text>
         <SocialLinks />
       </Flex>
     </Container>
