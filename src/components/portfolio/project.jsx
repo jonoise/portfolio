@@ -35,6 +35,7 @@ const Project = ({ project }) => {
               fontWeight="extrabold"
               as="a"
               href={project.github}
+              target="_blank"
               transition=".4s"
               _hover={{ color: '#fff56d' }}
             >
