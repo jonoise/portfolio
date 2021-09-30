@@ -12,12 +12,14 @@ const Technologies = () => {
     <MotionVStack
       w="full"
       justify="center"
-      pt="2"
+      pt="10"
       color={colors.hoverWhite}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 0.8 } }}
     >
-      <Text>Stack</Text>
+      <Text fontWeight="bold" color={colors.hoverWhite}>
+        Stack
+      </Text>
       <MotionDivider
         borderColor="#3838386B"
         w="50%"
@@ -29,7 +31,7 @@ const Technologies = () => {
           <MotionBox key={tech.id} whileHover={{ scale: 1.04 }}>
             <Tooltip label={tech.name}>
               <Text
-                fontSize="60px"
+                fontSize={{ base: '30px', md: '45px', lg: '60px' }}
                 transition=".3s"
                 _hover={{ color: 'white' }}
               >

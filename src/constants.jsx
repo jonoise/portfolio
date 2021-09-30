@@ -11,6 +11,8 @@ import {
 // STYLE COLORS
 export const colors = {
   hoverWhite: '#f4f4f49d',
+  purple: '#8F14FF',
+  contrast: '#ffe77b',
 }
 
 export const socialLinks = [
