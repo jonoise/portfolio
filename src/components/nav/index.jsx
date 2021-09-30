@@ -1,7 +1,8 @@
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 import SocialLinks from './social'
 import Container from '../container/index'
 import { colors } from '../../constants'
+import { MotionText } from '../motion/components'
 const Navbar = () => {
   return (
     <Container
@@ -12,7 +13,13 @@ const Navbar = () => {
       color={colors.hoverWhite}
     >
       <Flex w="full" h="100%" justify="space-between" align="center">
-        <Text fontWeight="bold">amilkar.dev</Text>
+        <MotionText
+          fontWeight="bold"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        >
+          amilkar.dev
+        </MotionText>
         <SocialLinks />
       </Flex>
     </Container>
