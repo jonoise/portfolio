@@ -7,6 +7,7 @@ import {
   SiTwitter,
   SiKoFi,
 } from 'react-icons/si'
+import { FiMail } from 'react-icons/fi'
 
 // STYLE COLORS
 export const colors = {
@@ -28,11 +29,17 @@ export const socialLinks = [
     url: 'https://twitter.com/soloamilkar',
     icon: <SiTwitter />,
   },
+  // {
+  //   id: 'kofi',
+  //   name: 'Kofi',
+  //   url: 'https://ko-fi.com/amilkar',
+  //   icon: <SiKoFi />,
+  // },
   {
-    id: 'kofi',
-    name: 'Kofi',
-    url: 'https://ko-fi.com/amilkar',
-    icon: <SiKoFi />,
+    id: 'mail',
+    name: 'Mail',
+    url: 'mailto:amilkarms@outlook.com',
+    icon: <FiMail />,
   },
 ]
 
