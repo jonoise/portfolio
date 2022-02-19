@@ -1,12 +1,92 @@
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.pStyles {
+  text-align: justify;
+}
+
+.pStyles h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul {
+  color: rgb(250, 249, 244);
+}
+.pStyles h1 {
+  font-weight: bold;
+  font-size: 52px;
+}
+
+.pStyles ul {
+  padding-left: 40px;
+}
+
+.pStyles li {
+  font-size: 20px;
+}
+
+.pStyles strong {
+  color: #c5faa1;
+  font-size: 19px;
+}
+
+.pStyles em {
+  color: #dffdcb;
+  font-size: 18px;
+}
+
+.pStyles p {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+.pStyles a {
+  color: #b3ff80;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.pStyles img {
+  padding: 20px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .pContainer {
+    padding: 0 5px;
+  }
+
+  .pStyles {
+    text-align: justify;
+  }
+
+  .pStyles h1 {
+    font-weight: bold;
+    font-size: 44px;
+  }
+
+  .pStyles a,
+  strong {
+    font-size: 26px;
+  }
+  .pStyles strong {
+    font-size: 26px;
+  }
+
+  .pStyles p,
+  a {
+    font-size: 26px;
+    margin: 10px 0;
+  }
 }

@@ -1,0 +1,76 @@
+import { PostLayout } from '../../components/post/layout.tsx'
+import Head from 'next/head'
+
+export const meta = {
+  title: 'Creadores: Un sitio para vender tu arte!',
+  author: 'Amilcar Munoz',
+}
+
+<article className='pContainer pStyles' >
+<Head>
+  <title>{meta.title}</title>
+  <meta property="og:title" content={meta.title} key="title" />
+  <meta property="og:image" content={'https://user-images.githubusercontent.com/71573508/154779141-987e8c1b-4cff-4518-a496-fa37154aa406.png)'} key="title" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@saudadeamilcar" />
+  <meta name="twitter:creator" content="@saudadeamilcar" />
+  <meta property="og:description" content="Primera entrada de mi blog donde repaso rapidamente el proyecto que he estado construyendo." />
+</Head>
+
+# Creadores: Un sitio para vender tu arte!
+
+Hace un par de meses que empecé a trabajar para una pequeña empresa
+de software que está desarrollando un producto en el espectro del ecommerce.
+Y a medida que avanza el proyecto, me familiarizo más con el ecommerce
+y su ecosistema. El proyecto me gusta, y poco a poco voy haciéndome
+ideas propias sobre el tema del comercio en línea. Al fin de cuentas mi
+trabajo es encontrar soluciones a las necesidades del negocio. Y me gusta
+la idea que han desarrollado sitios como Red Bubble o Big Cartel.
+Que son mercados en línea donde los usuarios pueden vender sus creaciones.
+Un mercado en línea de la talla de Big Cartel o Red Bubble no existe
+en Costa Rica. No pretendo, de ninguna manera, comparar mi humilde
+intento de proveer una plataforma para que otros intercambien valor,
+con el tamaño y complejidad de proyectos como Big Cartel o Red Bubble.
+En todo caso, lo que yo pretendo es hacer un website en el que una persona pueda subir
+un par de fotos de sus creaciones, ponerle un precio, compartir el link
+en sus redes sociales y conservar el dinero de su creacion.
+Inicialmente esta idea ya es problemática.
+
+Empezando porque para permitirle a extraños intercambiar dinero por
+internet es necesario un intermediario. Ya sea una entidad bancaria
+como el BAC o el Banco Nacional (se que son dos bancos que dan el
+servicio de pago en línea) o Stripe, Paypal o cualquier otra.
+Y eso implica desenbolsar dinero para pagar por los servicios,
+ya sean de un banco o de un gateway, o de cualquier software que
+se encargue de ello, de una u otra manera, hay que desembolsar
+dinero por el servicio.
+
+Y todavía se pone aún más picante, porque estamos en Costa Rica
+y las soluciones a este problema son escasas y costosas.
+Les mentiría si les digo que he revisado los docs de
+[GreenPay](https://greenpay.me/).
+Yo intenté usar el sandbox de GreenPay pero sin suerte.
+Creo que me tengo que poner en contacto con ellos para
+activarlo realmente, pero no lo he hecho. Y aunque desconozco
+el pricing de GreenPay, me da la impresion que vendria siendo
+la mejor opcion si el proyecto crece lo suficiente como para
+que empiece a ser factible anadir una pasarela de pago por medio
+de tarjetas de debito/credito.
+
+En fin. usar cualquier plataforma como intermediaria vendría
+siendo un problema. Principalmente por el costo del servicio,
+por ejemplo, este es el pricing del BAC para pagos en linea:
+
+![bac screenshot](/posts/bac.png)
+
+Porque si el fin del proyecto es que los artistas conserven el 100% de
+sus ganancias cuando realicen una venta, la única manera de permitir esto
+es “hookear” mi app con SINPE movil. SINPE soluciona mi problema,
+pero me crea otro: no existe una implementación de SINPE para la web.
+Habria que agregar el flow de SINPE en una aplicacion de React. Mas que un plugin,
+seria un wrapper alrededor del flow de SINPE para transferir dinero por **mensaje de texto**
+en el territorio costarricense.
+
+</article>
+
+export default ({ children }) => <PostLayout>{children}</PostLayout>
