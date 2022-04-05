@@ -6,6 +6,10 @@ import {
   SiGithub,
   SiTwitter,
   SiKoFi,
+  SiNextdotjs,
+  SiTypescript,
+  SiNodedotjs,
+  SiMongodb,
 } from 'react-icons/si'
 import { FiMail } from 'react-icons/fi'
 
@@ -50,19 +54,29 @@ export const technologies = [
     icon: <SiJavascript />,
   },
   {
+    id: 'typescript',
+    name: 'Typescript',
+    icon: <SiTypescript />,
+  },
+  {
     id: 'react',
     name: 'React',
     icon: <SiReact />,
   },
   {
-    id: 'python',
-    name: 'Python',
-    icon: <SiPython />,
+    id: 'next',
+    name: 'NextJS',
+    icon: <SiNextdotjs />,
   },
   {
-    id: 'django',
-    name: 'Django',
-    icon: <SiDjango />,
+    id: 'node',
+    name: 'NodeJS',
+    icon: <SiNodedotjs />,
+  },
+  {
+    id: 'mongo',
+    name: 'MongoDB',
+    icon: <SiMongodb />,
   },
 ]
 

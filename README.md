@@ -1,1 +1,1 @@
-website @ [amilkar.dev](https://amilkar.dev)
+website @ [amilcar.vercel.app](https://amilcar.vercel.app)

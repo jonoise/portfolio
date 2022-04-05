@@ -17,10 +17,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Amilkar - Developer</title>
+        <title>Amilcar - Developer</title>
         <meta
           name='description'
-          content='Amilkar Munoz portfolio website build with NextJS to showcase projects.'
+          content='Amilcar Munoz portfolio website build with NextJS to showcase projects.'
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>

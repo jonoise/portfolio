@@ -16,6 +16,7 @@
     "@mdx-js/loader": "^2.0.0",
     "@mdx-js/react": "^2.0.0",
     "@next/mdx": "^12.0.10",
+    "@nextui-org/react": "^1.0.6-beta.5",
     "framer-motion": "^4.1.17",
     "next": "11.1.2",
     "react": "17.0.2",
