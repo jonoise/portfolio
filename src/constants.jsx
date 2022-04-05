@@ -83,33 +83,33 @@ export const technologies = [
 export const projects = [
   {
     id: '1',
+    title: 'Creadores',
+    type: 'Fullstack Application',
+    description:
+      'An application for creators. Similar to BigCartel. It provides creators in Costa Rica a platform to create their own online store and sell via SINPE Móvil workflow',
+    image: '/images/1.png',
+    github: 'https://github.com/soloamilkar',
+    url: 'https://creadores.shop',
+  },
+  {
+    id: '1',
     title: 'Los Junior',
     type: 'Fullstack Application',
     description:
       'My attempt to create a note-taking app like Notion. On this project I implemented Drag and Drop to-do list, markdown notes, grades tracker. Using React + Django Rest Framework.',
-    image: '/images/1.png',
+    image: '/images/2.png',
     github: 'https://github.com/soloamilkar/los-junior-frontend',
     url: 'https://losjunior.co',
   },
   {
-    id: '2',
+    id: '3',
     title: 'Mein',
     type: 'Fullstack Application',
     description:
-      'This is my first "SaaS" application. It\'s a digital menu for restaurants. Creating interactive tables with websockets. Using React, NextJS, SocketIO and Django Rest Framework for the backend.',
-    image: '/images/2.png',
+      "It's a digital menu for restaurants. Creating interactive tables with websockets. Using React, NextJS, SocketIO and Django Rest Framework for the backend.",
+    image: '/images/3.png',
     github: 'https://github.com/soloamilkar/mein-nextjs',
     url: 'https://meincr.com',
-  },
-  {
-    id: '3',
-    title: 'One Radio',
-    type: 'Client Application',
-    description:
-      'Radio stream from a third party URL broadcasting Lo-Fi 24/7. Was made with React and NextJS. The idea is to implement websockets to display how many users there are in the streaming and even a chat.',
-    image: '/images/3.png',
-    github: 'https://github.com/soloamilkar/radio',
-    url: 'https://radio-one.vercel.app',
   },
   {
     id: '4',
